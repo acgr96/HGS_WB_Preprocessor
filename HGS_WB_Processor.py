@@ -2,7 +2,9 @@
 import pandas as pd
 from IPython.display import display
 
-with open("CBCR_UnsatClimDewatero.water_balance.dat", "r") as fin:
+filename = "CBCR_UnsatSurfo.water_Balance.dat"
+
+with open(filename, "r") as fin:
     lines = fin.readlines()
 with open("WB.dat", "w") as fout:
     for line in lines:
